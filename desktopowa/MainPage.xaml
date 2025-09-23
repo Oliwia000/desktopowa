@@ -5,24 +5,23 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" BackgroundColor="#FFF8DC" Spacing="20">
 
-            <!-- Duży prostokąt -->
             <BoxView x:Name="BigBox" HeightRequest="120" Color="White"/>
 
             <Label Text="Dobierz kolor suwakiem i zapisz przyciskiem:"/>
 
-            <!-- Suwaki -->
-            <!-- Suwaki -->
             <StackLayout Orientation="Horizontal" Spacing="10">
                 <Label Text="R" WidthRequest="20" VerticalOptions="Center"/>
                 <Slider x:Name="SliderR" Minimum="0" Maximum="255" Value="255"
             ValueChanged="Slider_ValueChanged"
             HorizontalOptions="FillAndExpand"/>
+                
                 <Label x:Name="LabelR" Text="255" WidthRequest="40" 
            VerticalOptions="Center" HorizontalTextAlignment="Center"/>
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" Spacing="10">
                 <Label Text="G" WidthRequest="20" VerticalOptions="Center"/>
+                
                 <Slider x:Name="SliderG" Minimum="0" Maximum="255" Value="255"
             ValueChanged="Slider_ValueChanged"
             HorizontalOptions="FillAndExpand"/>
@@ -32,6 +31,7 @@
 
             <StackLayout Orientation="Horizontal" Spacing="10">
                 <Label Text="B" WidthRequest="20" VerticalOptions="Center"/>
+                
                 <Slider x:Name="SliderB" Minimum="0" Maximum="255" Value="255"
             ValueChanged="Slider_ValueChanged"
             HorizontalOptions="FillAndExpand"/>
@@ -39,19 +39,16 @@
            VerticalOptions="Center" HorizontalTextAlignment="Center"/>
             </StackLayout>
 
-
-            <!-- Przycisk (większy i wyśrodkowany) -->
             <Button Text="Pobierz"
                     BackgroundColor="#CD853F" 
                     TextColor="White"
-                    WidthRequest="150"
+                    WidthRequest="250"
                     HeightRequest="50"
                     HorizontalOptions="Center"
                     FontAttributes="Bold"
                     Clicked="OnPobierzClicked"/>
 
-            <!-- Mały prostokąt z napisem w środku -->
-            <Grid HeightRequest="60" WidthRequest="200" HorizontalOptions="Center">
+            <Grid HeightRequest="60" WidthRequest="250" HorizontalOptions="Center">
                 <BoxView x:Name="SmallBox" Color="White"/>
                 <Label x:Name="LabelRGB" Text="255, 255, 255"
                        HorizontalOptions="Center"
