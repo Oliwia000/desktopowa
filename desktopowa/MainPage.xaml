@@ -3,15 +3,15 @@
              x:Class="desktopowa.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout Padding="20" BackgroundColor="#FFF8DC" Spacing="20">
+    <VerticalStackLayout Padding="20" BackgroundColor="#FFF8DC" Spacing="20">
 
             <BoxView x:Name="BigBox" HeightRequest="120" Color="White"/>
 
             <Label Text="Dobierz kolor suwakiem i zapisz przyciskiem:"/>
 
-            <StackLayout Orientation="Horizontal" Spacing="10">
+            <StackLayout Orientation="Horizontal" Spacing="10" >
                 <Label Text="R" WidthRequest="20" VerticalOptions="Center"/>
-                <Slider x:Name="SliderR" Minimum="0" Maximum="255" Value="255"
+                <Slider  x:Name="SliderR" Minimum="0" Maximum="255" Value="255"
             ValueChanged="Slider_ValueChanged"
             HorizontalOptions="FillAndExpand"/>
                 
@@ -22,11 +22,11 @@
             <StackLayout Orientation="Horizontal" Spacing="10">
                 <Label Text="G" WidthRequest="20" VerticalOptions="Center"/>
                 
-                <Slider x:Name="SliderG" Minimum="0" Maximum="255" Value="255"
+                <Slider x:Name="SliderG"  Minimum="0"  Maximum="255" Value="255"
             ValueChanged="Slider_ValueChanged"
             HorizontalOptions="FillAndExpand"/>
-                <Label x:Name="LabelG" Text="255" WidthRequest="40" 
-           VerticalOptions="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="LabelG" Text="255"  WidthRequest="40" 
+           VerticalOptions="Center"  HorizontalTextAlignment="Center"/>
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" Spacing="10">
@@ -55,7 +55,6 @@
                        VerticalOptions="Center"
                        FontAttributes="Bold"/>
             </Grid>
-
-        </VerticalStackLayout>
+    </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
